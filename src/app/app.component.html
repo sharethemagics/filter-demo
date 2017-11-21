@@ -1,0 +1,21 @@
+<nb-layout>
+
+  <nb-layout-header fixed>
+    <div class="logo-containter">
+      <a (click)="toggleSidebar()" href="#" class="navigation">
+        <i class="material-icons">reorder</i>
+      </a>
+      <div class="logo" (click)="goToHome()">ngx-
+        <span>admin</span>
+      </div>
+    </div>
+  </nb-layout-header>
+
+  <nb-sidebar>
+    <app-sidefilter></app-sidefilter>
+  </nb-sidebar>
+
+  <nb-layout-column>
+    <app-maincontent></app-maincontent>
+  </nb-layout-column>
+</nb-layout>
